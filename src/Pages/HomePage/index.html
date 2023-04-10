@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+    <title>Room4Me - Home</title>    
+
+    <meta name="author" content="Davi Emanuel">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img id="logo" src="../../img/logo-marca.png" alt="Logo Room4Me">
+            <ul>
+                <li>
+                    <a href="#">Procurar Quarto</a>
+                </li>
+                <li>
+                    <a href="#">Anunciar Quarto</a>
+                </li>
+            </ul>
+            <button id="login-button">Entrar</button>
+        </nav>
+    </header>
+    
+    <section id="search-section">
+        <div class="search-subsections">
+            <img id="image-search" src="../../img/home-image-search.png">
+        </div>
+        <div class="search-subsections">
+            <div id="search-background">
+                <div id="search-form">
+                    <h1>O melhor quarto<br>para <b>você!</b> </h1>
+                    <form>
+                        <fieldset>
+                            <div class="input-group">
+                                <input id="state-input" type="text" name="Estado">
+                                <label for="state-input">Estado</label>
+                            </div>
+    
+                            <div class="input-group">
+                                <input id="city-input" type="text" name="Cidade">
+                                <label for="city-input">Cidade</label>
+                            </div>
+                        
+                            <div class="input-group">
+                                <input id="district-input" type="text" name="Bairro">
+                                <label for="district-input">Bairro</label>
+                            </div>
+                            
+                            <div class="in-line">
+                                <div class="input-subgroup">
+                                    <select name="valor" id="value-select">
+                                        <option value="500">até 500</option>
+                                        <option value="1000">até 1000</option>
+                                        <option value="2000">até 2000</option>
+                                        <option value="2500">até 2500</option>
+                                    </select>
+                                    <label for="value-select">Valor de</label>
+                                </div>
+    
+                                <div class="input-subgroup">
+                                    <input id="bedroomsQuantity-input" type="number" name="Numero de quartos">
+                                    <label for="bedroomsQuantity-input">Nº Quartos</label>
+                                </div>
+                            </div>
+
+                            <button id="submit-button" type="submit">Procurar quarto</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
