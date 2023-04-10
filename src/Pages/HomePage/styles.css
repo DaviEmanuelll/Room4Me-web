@@ -32,7 +32,7 @@ button {
     font-size: 16px;
     padding: 8px 24px;
 }
-
+/*///////////////////*/
 header {
     height: 60px;
     width: 100vw;
@@ -45,6 +45,7 @@ header {
     justify-content: center;
     align-items: center;
 
+    z-index: 1;
 }
 
 #navbar {
@@ -55,6 +56,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 5;
+
 }
 
 ul {
@@ -77,10 +80,10 @@ a {
     width: 148px;
     height: 33px;
 }
-
+/*///////////////////*/
 #search-section {
     background-color: var(--secondary-background); 
-    height: 720px;  
+    height: 640px;  
 
     display: flex;
     justify-content: space-around;
@@ -96,7 +99,7 @@ a {
     position: absolute;
     left: 0;
     width: 640px;
-    height: 600px;
+    height: 490px;
     margin-top: 90px;
 }
 
@@ -209,6 +212,74 @@ select:focus ~ label {
 
 #submit-button {
     margin-top: 16px;
+    padding: 0.8rem;
+    font-size: 20px;
+}
+/*///////////////////*/
+#advertising-section {
+    height: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#image-background {
+    position: absolute;
+
+    height: 500px;
+    width: 100%;
+    z-index: 0;
+}
+
+#banner-section {
+    display: flex;
+
+}
+
+.banner-subsection {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.banner-card {
+    width: 560px;
+    height: 480px;
+    background-color: var(--secondary-background);
+    border-radius: 12px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .9;
+    transition: transform .75s;
+} 
+.banner-card:hover {
+    box-shadow: 0px 0px 4px 2px rgba(255, 103, 0, 0.2);
+}
+
+.banner-card:hover .banner-image {
+    transform: scale(1.15);
+}
+
+#advertising-button-container {
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#advertising-button {
+    width: 30%;
     padding: 0.8rem;
     font-size: 20px;
 }
