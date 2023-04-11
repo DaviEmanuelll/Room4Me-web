@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+  background-image: url('../../img/loginBackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #4C4652;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+section{
+  width: 40%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1100px) {
+  main {
+    flex-direction: column;
+  }
+
+  #main-container{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  #space-container{
+    height: 0;
+    width: 0;
+  }
+
+  #login-container {
+    height: 100%;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+
+#login-container{
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  height: 80%;
+  width: 70%;
+  display: flex;
+  margin:30px auto;
+  padding: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+#login-container #logo{
+  width: 250px;
+}
+
+#login-container label{
+  text-align: left;
+  width: 100%;
+}
+
+#login-container span{
+  color: red;
+  min-height: 15px;
+  margin-bottom: 15px;
+}
+
+
+#login-container input{
+  min-height: 50px;
+  border-radius: 15px;
+  border: 1px solid #4C4652;
+  width: 100%;
+  margin: 10px;
+  font-size: 20px;
+  padding: 0 10px
+}
+
+#login-container #submit-button{
+  border: none;
+  color: #ffffff;
+  background-color: #FF6700;
+  width: 100%;
+  min-height: 50px;
+  border-radius: 15px;
+  font-size: 20px;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+#login-container #google-login-button{
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  border-radius: 100% ;
+  border: none;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  cursor: pointer;
+}
+
+#login-container a{
+  text-decoration: none;
+  font-size: 16px;
+  color: #FF6700;
+}
