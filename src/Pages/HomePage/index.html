@@ -12,23 +12,33 @@
     <link rel="stylesheet" href="styles.css">
 
     <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
-    <title>Room4Me - Home</title>    
+    <title>Room4Me - HomePage</title>    
 
     <meta name="author" content="Davi Emanuel">
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <img id="logo" src="../../img/logo-marca.png" alt="Logo Room4Me">
+            <div id="grid-l">
+                <a>
+                    <img id="logo" src="../../img/logo-marca.svg" alt="Logo Room4Me">
+                </a>
+            </div>
             <ul>
-                <li>
-                    <a href="#">Procurar Quarto</a>
-                </li>
-                <li>
-                    <a href="#">Anunciar Quarto</a>
-                </li>
+                <div id="grid-r">
+                    <li>
+                        <a id="search-page" href="../SearchPage/index.html">Procurar Quarto</a>
+                    </li>
+                </div>
+                <div id="grid-l">
+                    <li>
+                        <a id="announce-page" href="#">Anunciar Quarto</a>
+                    </li>
+                </div>
             </ul>
-            <button id="login-button">Entrar</button>
+            <div id="grid-r">
+                <button id="login-button">Entrar</button>
+            </div>
         </nav>
     </header>
     
@@ -67,7 +77,7 @@
                                         <option value="2000">até 2000</option>
                                         <option value="2500">até 2500</option>
                                     </select>
-                                    <label for="value-select">Valor de</label>
+                                    <label for="value-select">Valor</label>
                                 </div>
     
                                 <div class="input-subgroup">
@@ -104,7 +114,7 @@
     </section>
     
     <section id="announce-section">
-        <img id="image-background-botton" src="../../img/home-background-botton.png">
+        <img id="image-background-bottom" src="../../img/home-background-bottom.png">
         <div id="announce-container">
             <div class="announce-subcontainer">
                 <div id="announce-mensage">

@@ -4,6 +4,7 @@
     --text-low: #B4B4B4;
     --primary-background: #FFFCF9;
     --secondary-background: #FFDAC2;
+    --low-background: #F4F4F4;
 
     font-family: 'Open Sans' 500 sans-serif;
 }
@@ -58,8 +59,7 @@ header {
 
 #navbar {
     height: 60px;
-    width: 80%;
-    padding: 8px 48px;
+    width: 85vw;
 
     position: absolute;
     display: flex;
@@ -82,11 +82,19 @@ a {
    color: var(--text-base);
    outline: 0;
    text-decoration: none; 
+   font-weight: 600;
 }
 
-#logo {
-    width: 148px;
-    height: 33px;
+#grid-l {
+    width: 160px;
+    display: flex;
+    justify-content: left;
+}
+
+#grid-r {
+    width: 160px;
+    display: flex;
+    justify-content: right;
 }
 /*///////////////////*/
 #search-section {
@@ -296,7 +304,7 @@ select:focus ~ label {
     background-color: var(--secondary-background); 
 }
 
-#image-background-botton {
+#image-background-bottom {
     position: absolute;
 
     height: 500px;

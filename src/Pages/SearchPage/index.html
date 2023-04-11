@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+    <title>Room4Me - SearchPage</title>    
+
+    <meta name="author" content="Davi Emanuel">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="grid-l">
+                <a href="../HomePage/index.html">
+                    <img id="logo" src="../../img/logo2.svg" alt="Logo Room4Me">
+                </a>
+            </div>
+            <ul>
+                <div id="grid-r">
+                    <li>
+                        <a id="search-page" href="../SearchPage/index.html">Procurar Quarto</a>
+                    </li>
+                </div>
+                <div id="grid-l">
+                    <li>
+                        <a id="announce-page" href="#">Anunciar Quarto</a>
+                    </li>
+                </div>
+            </ul>
+            <div id="grid-r">
+                <button id="login-button">Entrar</button>
+            </div>
+        </nav>
+    </header>
+    <section id="body-section">
+        <section id="filter-section">
+            <div id="filter-container">
+                <div class="search-container">
+                    <div class="input-group">
+                        <label class="title-label" for="region-input">Pesquisar região</label>
+                        <input id="region-input" type="text" name="Região" placeholder="Mossoró, RN">
+                    </div>
+                    <div class="input-group">
+                        <label class="title-label" for="order-select">Ordernar por</label>
+                        <select name="Ordernar" id="order-select">
+                            <option value="min-value">Mais barato</option>
+                            <option value="max-value">Mais caro</option>
+                            <option value="recent">Mais recente</option>
+                            <option value="old">Mais antigo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="in-line">
+                    <img id="filter-icon" src="../../img/filter-icon.svg" alt="Icone de filtro">
+                    <h1>Filtros</h1>
+                    <div class="line-separator"></div>
+                </div>
+                <fieldset>
+
+                    <legend>Tipo de quarto</legend>
+                    <div class="in-line">
+                        <input id="apartment-checkbox" class="checkbox" type="checkbox" name="Apartamento">
+                        <label for="apartment-checkbox">Apartamento</label>
+                    </div>
+                    <div class="in-line">
+                        <input id="house-checkbox" class="checkbox" type="checkbox" name="Casa">
+                        <label for="house-checkbox">Casa</label>
+                    </div>
+                    <div class="in-line">
+                        <input id="condominium-checkbox" class="checkbox" type="checkbox" name="Condomínio">
+                        <label for="condominium-checkbox">Condomínio</label>
+                    </div>
+                    <div class="in-line">
+                        <input id="kitnet-checkbox" class="checkbox" type="checkbox" name="Kitnet/Studio">
+                        <label for="kitnet-checkbox">Kitnet/Studio</label>
+                    </div>
+                    
+                    <div class="line-separator"></div> 
+                    
+                    <div class="in-line-sbt">
+                        <label class="title-label" for="value-select">Valor</label>
+                        <select class="select-subgroup" name="valor" id="value-select">
+                            <option value="500">até 500</option>
+                            <option value="1000">até 1000</option>
+                            <option value="2000">até 2000</option>
+                            <option value="2500">até 2500</option>
+                            <option value=">2500">acima 2500</option>
+                        </select>
+                    </div>
+                    
+                    <div class="line-separator"></div> 
+
+                    <div class="in-line-sbt">
+                        <label class="title-label" for="bedrooms-quantity-input">Quartos</label>
+                        <input id="bedrooms-quantity-input" class="input-subgroup" type="number" name="Quartos">
+                    </div>
+                    <div class="in-line-sbt">
+                        <label class="title-label" for="bathroom-quantity-input">Banheiros</label>
+                        <input id="bathroom-quantity-input" class="input-subgroup" type="number" name="Banheiros">
+                    </div>
+                    
+                    <div class="line-separator"></div> 
+
+                    <div class="in-line-sbt">
+                        <label class="title-label" for="available-to-divide">Dividir quarto</label>
+                        <select class="select-subgroup" name="availableToDivide" id="available-to-divide">
+                            <option value="yes">Sim</option>
+                            <option value="no">Não</option>
+                            <option value="whatever">Tanto Faz</option>
+                        </select>
+                    </div>
+                    <div class="in-line-sbt">
+                        <label class="title-label" for="allowed-gender">Dividir com</label>
+                        <select class="select-subgroup" name="allowedGender" id="allowed-gender">
+                            <option value="yes">Mesmo gênero</option>
+                            <option value="no">Tanto faz</option>
+                        </select>
+                    </div>
+
+                    <div class="line-separator"></div> 
+
+                    <div class="in-line-sbt">
+                        <label class="title-label" for="available-to-pet">Permitido pets</label>
+                        <select class="select-subgroup" name="availableToPet" id="available-to-pet">
+                            <option value="yes">Sim</option>
+                            <option value="no">Não</option>
+                            <option value="whatever">Tanto Faz</option>
+                        </select>
+                    </div>
+                </fieldset>
+            </div>
+                
+        </section>
+    </section>
+</body>
+</html>
