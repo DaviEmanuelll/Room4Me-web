@@ -1,11 +1,11 @@
 :root {
     --primary-color: #FF6700;
+    --primary-color-dark: #BF4D00;
     --text-base: #4C4652;
     --text-low: #B4B4B4;
     --primary-background: #FFFCF9;
     --secondary-background: #FFDAC2;
     --low-background: #F4F4F4;
-
 }
 
 * {
@@ -40,7 +40,17 @@ button, #login-button {
     border-radius: 12px;
     font-size: 16px;
     padding: 8px 24px;
-    
+    transition: .5s;
+}
+
+button:hover {
+    background-color: var(--primary-color-dark);
+    cursor: pointer;
+}
+
+#login-button:hover {
+    background-color: var(--primary-color-dark);
+    cursor: pointer;
 }
 
 /*///////////////////*/
@@ -345,6 +355,11 @@ select:focus ~ label {
     margin-top: 16px;
     padding: 0.8rem;
     font-size: 20px;
+}
+
+#announce-button:hover {
+    background-color: var(--primary-color);
+    color: var(--secondary-background);
 }
 
 #image-announce-container {

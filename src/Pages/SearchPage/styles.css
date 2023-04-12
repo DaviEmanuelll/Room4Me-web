@@ -6,7 +6,7 @@
     --secondary-background: #FFDAC2;
     --low-background: #F4F4F4;
 
-    font-family: 'Open Sans' 500 sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 * {
@@ -32,7 +32,7 @@ body {
     border-radius: 5px;
 }
 
-button {
+button, #login-button {
     border: none;
     background-color: var(--primary-color);
     color: var(--primary-background);

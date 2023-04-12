@@ -1,5 +1,6 @@
 :root {
     --primary-color: #FF6700;
+    --primary-color-dark: #BF4D00;
     --text-base: #4C4652;
     --text-low: #B4B4B4;
     --primary-background: #FFFCF9;
@@ -78,7 +79,7 @@ body {
     width: 400px;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
     min-height: 480px;
     margin-inline: auto;
 }
@@ -88,6 +89,7 @@ body {
     flex-direction: column;
     text-align: center;
     gap: 8px;
+    padding: 8px;
 }
 
 #logo {
@@ -110,12 +112,16 @@ a {
     font-weight: 600;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .input-group {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 2px;
-    padding: 12px;
+    padding-top: 12px;
 }
 
 .field-input {
@@ -186,6 +192,7 @@ label {
 
 .checkbox:hover {
     background-color: var(--low-background);
+    cursor: pointer;
 }
 
 .checkbox:focus {
@@ -218,5 +225,22 @@ label {
     height: 40px;
     outline: none;
 
-    margin-top: 24px;
+    margin-top: 16px;
+}
+
+#submit-button:hover {
+    background-color: var(--primary-color-dark);
+    cursor: pointer;
+}
+
+span {
+    color: red;
+    min-height: 15px;
+    align-self: center;
+}
+
+@media only screen and (max-width: 960px) {
+    #body-section {
+        width: 100%;
+    }
 }
