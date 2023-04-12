@@ -73,6 +73,7 @@ header {
     background-color: transparent;
     padding: 8px;
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -209,7 +210,6 @@ select:focus {
     color: var(--primary-color);
 }
 
-
 #filter-icon {
     width: 16px;
     height: 16px;
@@ -242,7 +242,7 @@ label {
 }
 
 .checkbox:hover {
-    border-color: var(--secondary-background);
+    background-color: var(--low-background);
 }
 
 .checkbox:focus {

@@ -6,10 +6,11 @@
     --secondary-background: #FFDAC2;
     --low-background: #F4F4F4;
 
-    font-family: 'Open Sans' 500 sans-serif;
 }
 
 * {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:  500;
     margin: 0;
     padding: 0;
     border: none;
@@ -32,13 +33,14 @@ body {
     border-radius: 5px;
 }
 
-button {
+button, #login-button {
     border: none;
     background-color: var(--primary-color);
     color: var(--primary-background);
     border-radius: 12px;
     font-size: 16px;
     padding: 8px 24px;
+    
 }
 
 /*///////////////////*/

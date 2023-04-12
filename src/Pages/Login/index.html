@@ -1,34 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Room4Me - Conecte-se agora!</title>
-    <link rel="stylesheet" href="./styles.css" />
-    
-  </head>
-  <body>
-    <main>
-      <section id="main-container">
-        <div id="login-container">
-          <img src="../../img/logo.svg" alt="logo Room4Me" id="logo">
-          <h2>Acesse sua conta</h2>
-          <label for="email-input">Email</label>
-          <input type="text" name="email-input" id="email-input" aria-label="Insira seu endereço de email">
-          <span id="email-error-msg"></span>
-          <label for="password-input">Senha</label>
-          <input type="password" name="password-input" id="password-input" aria-label="Insira sua senha">
-          <span id="password-error-msg"></span>
-          <button id="submit-button" onclick="handleSubmit()">Entrar</button>
-          <a href="../FirstStepRegister/index.html">Crie sua conta</a>
-          <p>Ou</p>
-          <button id="google-login-button"><img src="../../img/googleLogo.svg" alt="google-button-icon"></button>
-        </div>
-      </section>
-      <section id="space-container">     
-      </section>
-    </main>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+    <title>Room4Me - Login</title>    
+
+    <meta name="author" content="Davi Emanuel">
+</head>
+<body>
+    <img id="image-background" src="../../img/login-background.png" alt="imagem de fundo">
+
+    <section id="body-section">
+        <main id="login-background">
+            <div id="login-container">
+                <div id="header-container">
+                    <a href="../../Pages/HomePage/index.html">
+                        <img id="logo" src="../../img/logo-marca.svg" alt="Logo Room4Me">
+                    </a>
+                    <h1>Acesse sua conta</h1>
+                    <a id="resgister" href="../FirstStepRegister/index.html">ou crie uma nova</a>
+                </div>
+                <div class="input-group">
+                    <input class="field-input" type="text" name="email-input" id="email-input" aria-label="Insira seu endereço de email">
+                    <label class="label-input" for="email-input">Email</label>
+                </div>
+                <div class="input-group">
+                    <input class="field-input" type="password" name="password-input" id="password-input" aria-label="Insira sua senha">
+                    <label class="label-input" for="password-input">Senha</label>
+                    <span id="password-error-msg"></span>
+                </div>
+                <div id="footer-container">
+                    <div id="login-options">
+                        <div class="in-line">
+                            <input id="keep-connected" class="checkbox" type="checkbox" name="keep-connected">
+                            <label class="label-checkbox" for="keep-connected">Manter conectado</label>
+                        </div>
+                        <a href="">Esqueceu a senha?</a>
+                    </div>
+                    <button id="submit-button" onclick="handleSubmit()">Entrar</button>
+                </div>
+                
+            </div>
+        </main>
+    </section>
     <script src="./script.js"></script>
-  </body>
+</body>
 </html>
