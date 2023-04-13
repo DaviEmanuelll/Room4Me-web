@@ -44,6 +44,7 @@
     <section id="body-section">
         <section id="form-card">
             <section class="form-container">
+                <legend>Dados apartamento</legend>
                 <label for="img-input">Fotos</label>
                 <div id="img-input-container" class="input-group">
                     <img id="add-img-icon" src="../../img/add-img-icon.svg" alt="Adicionar Imagem">
@@ -66,12 +67,11 @@
                     <textarea name="description-input" id="description-input" cols="16" rows="10"></textarea>
                     <label class="label-input" for="description-input">Descrição</label>
                 </div>
-                <!-- Periodo -->
             </section>
 
             <div class="line-separator-y"></div>
             
-            <div>
+            <div class="section-from-container">
                 <section class="form-container">
                     <form>
                         <fieldset>
@@ -136,9 +136,68 @@
                         </fieldset>
                     </form>
                 </section>
+
                 <div class="line-separator-x"></div>
+                
                 <section id="" class="form-container">
-    
+                    <legend>Aspectos</legend>
+                    <div class="in-line-sbt">
+                        <div id="apartment-type-group" class="select-group">
+                            <span id="apartment-type-error-msg"></span>
+                            <select name="apartment-type" id="apartment-type">
+                                <option value="apartment">Apartamento</option>
+                                <option value="house">Casa</option>
+                                <option value="condominium">Condomínio</option>
+                                <option value="kitnet">Kitnet/Studio</option>
+                            </select>
+                            <label class="title-label" for="apartment-type">Tipo de quarto</label>
+                        </div>
+                        <div class="input-group">
+                            <span id="bedrooms-quantity-error-msg"></span>
+                            <input id="bedrooms-quantity-input" class="input-subgroup" type="number" name="bedrooms-quantity-input">
+                            <label class="title-label" for="bedrooms-quantity-input">Quartos</label>
+                        </div>
+                        <div class="input-group">
+                            <span id="bathroom-quantity-error-msg"></span>
+                            <input id="bathroom-quantity-input" class="input-subgroup" type="number" name="bathroom-quantity-input">
+                            <label class="title-label" for="bathroom-quantity-input">Banheiros</label>
+                        </div>
+                        <div class="input-group">
+                            <span id="capacity-error-msg"></span>
+                            <input id="capacity-input" class="input-subgroup" type="number" name="capacity-input">
+                            <label class="title-label" for="capacity-input">Capacidade</label>
+                        </div>
+                    </div>
+                    <div class="in-line-sbt">
+                        <div id="available-to-divide-group" class="select-group">
+                            <span id="available-to-divide-error-msg"></span>
+                            <select name="available-to-divide" id="available-to-divide">
+                                <option value="yes">Sim</option>
+                                <option value="no">Não</option>
+                                <option value="whatever">Tanto Faz</option>
+                            </select>
+                            <label class="title-label" for="available-to-divide">Permitido dividir quarto</label>
+                        </div>
+                        <div id="allowed-gender-group" class="select-group">
+                            <span id="allowed-gender-error-msg"></span>
+                            <select name="allowed-gender-input" id="allowed-gender">
+                                <option value="masculine">Masculino</option>
+                                <option value="feminine">Feminino</option>
+                                <option value="whatever">Tanto Faz</option>
+                            </select>
+                            <label class="title-label" for="allowed-gender">Genero permitido</label>
+                        </div>
+                        <div id="available-to-pet-group" class="select-group">
+                            <span id="available-to-pet-error-msg"></span>
+                            <select class="select-subgroup" name="available-to-pet" id="available-to-pet">
+                                <option value="yes">Sim</option>
+                                <option value="no">Não</option>
+                                <option value="whatever">Tanto Faz</option>
+                            </select>
+                            <label class="title-label" for="available-to-pet">Permitido pets</label>
+                        </div>
+                    </div>
+                    <a id="announce-button" href="#">Anunciar quarto</a>
                 </section>
             </div>
         </section>
