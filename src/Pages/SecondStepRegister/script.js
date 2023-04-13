@@ -4,9 +4,9 @@ function handleRegister() {
   let imgErrorMsg = document.getElementById("img-error-msg");
   let nameErrorMsg = document.getElementById("name-error-msg");
 
-  nameErrorMsg.innerHTML = "";
-
-  if (name == "" || name == undefined) {
-    nameErrorMsg.innerHTML = "Preencha o campo de nome";
+  nameErrorMsg.innerHTML = '';
+  
+  if(name == '' || name == undefined){
+    nameErrorMsg.innerHTML = "Preencha o campo de nome"
   }
 }

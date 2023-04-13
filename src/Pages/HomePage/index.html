@@ -1,151 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
 
-    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon" />
-    <title>Room4Me</title>
+    <link rel="icon" href="../../img/favicon.ico" type="image/x-icon">
+    <title>Room4Me</title>    
 
-    <meta name="author" content="Davi Emanuel" />
-  </head>
-  <body>
+    <meta name="author" content="Davi Emanuel">
+</head>
+<body>
     <header>
-      <nav id="navbar">
-        <div id="grid-l">
-          <a>
-            <img id="logo" src="../../img/logo-name.svg" alt="Logo Room4Me" />
-          </a>
-        </div>
-        <ul>
-          <div id="grid-r">
-            <li>
-              <a id="search-page" href="../SearchPage/index.html"
-                >Procurar Quarto</a
-              >
-            </li>
-          </div>
-          <div id="grid-l">
-            <li>
-              <a id="announce-page" href="#">Anunciar Quarto</a>
-            </li>
-          </div>
-        </ul>
-        <div id="grid-r">
-          <a id="login-button" href="../Login/index.html">Entrar</a>
-        </div>
-      </nav>
+        <nav id="navbar">
+            <div id="grid-l">
+                <a>
+                    <img id="logo" src="../../img/logo-name.svg" alt="Logo Room4Me">
+                </a>
+            </div>
+            <ul>
+                <div id="grid-r">
+                    <li>
+                        <a id="search-page" href="../SearchPage/index.html">Procurar Quarto</a>
+                    </li>
+                </div>
+                <div id="grid-l">
+                    <li>
+                        <a id="announce-page" href="#">Anunciar Quarto</a>
+                    </li>
+                </div>
+            </ul>
+            <div id="grid-r">
+                <a id="login-button" href="../Login/index.html">Entrar</a>
+            </div>
+        </nav>
     </header>
-
+    
     <section id="search-section">
-      <div class="search-subsections">
-        <div class="image-search-container">
-          <img id="image-search" src="../../img/home-image-search.png" />
+        <div class="search-subsections">
+            <div class="image-search-container">
+                <img id="image-search" src="../../img/home-image-search.png">
+            </div>
         </div>
-      </div>
-      <div class="search-subsections">
-        <div id="search-background">
-          <div id="search-form">
-            <h1>O melhor quarto<br />para <b>você!</b></h1>
-            <form>
-              <fieldset>
-                <div class="input-group">
-                  <input id="state-input" type="text" name="Estado" />
-                  <label for="state-input">Estado</label>
+        <div class="search-subsections">
+            <div id="search-background">
+                <div id="search-form">
+                    <h1>O melhor quarto<br>para <b>você!</b> </h1>
+                    <form>
+                        <fieldset>
+                            <div class="input-group">
+                                <input id="state-input" type="text" name="Estado">
+                                <label for="state-input">Estado</label>
+                            </div>
+    
+                            <div class="input-group">
+                                <input id="city-input" type="text" name="Cidade">
+                                <label for="city-input">Cidade</label>
+                            </div>
+                        
+                            <div class="input-group">
+                                <input id="district-input" type="text" name="Bairro">
+                                <label for="district-input">Bairro</label>
+                            </div>
+                            
+                            <div class="in-line">
+                                <div class="input-subgroup">
+                                    <select name="valor" id="value-select">
+                                        <option value="500">até 500</option>
+                                        <option value="1000">até 1000</option>
+                                        <option value="2000">até 2000</option>
+                                        <option value="2500">até 2500</option>
+                                    </select>
+                                    <label for="value-select">Valor</label>
+                                </div>
+    
+                                <div class="input-subgroup">
+                                    <input id="bedroomsQuantity-input" type="number" name="Numero de quartos">
+                                    <label for="bedroomsQuantity-input">Nº Quartos</label>
+                                </div>
+                            </div>
+
+                            <button id="submit-button" type="submit">Procurar quarto</button>
+                        </fieldset>
+                    </form>
                 </div>
-
-                <div class="input-group">
-                  <input id="city-input" type="text" name="Cidade" />
-                  <label for="city-input">Cidade</label>
-                </div>
-
-                <div class="input-group">
-                  <input id="district-input" type="text" name="Bairro" />
-                  <label for="district-input">Bairro</label>
-                </div>
-
-                <div class="in-line">
-                  <div class="input-subgroup">
-                    <select name="valor" id="value-select">
-                      <option value="500">até 500</option>
-                      <option value="1000">até 1000</option>
-                      <option value="2000">até 2000</option>
-                      <option value="2500">até 2500</option>
-                    </select>
-                    <label for="value-select">Valor</label>
-                  </div>
-
-                  <div class="input-subgroup">
-                    <input
-                      id="bedroomsQuantity-input"
-                      type="number"
-                      name="Numero de quartos"
-                      min="1"
-                    />
-                    <label for="bedroomsQuantity-input">Nº Quartos</label>
-                  </div>
-                </div>
-
-                <button id="submit-button" type="submit">
-                  Procurar quarto
-                </button>
-              </fieldset>
-            </form>
-          </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <section id="advertising-section">
-      <img id="image-background-top" src="../../img/home-background-top.png" />
-      <div id="banner-section">
-        <div class="banner-subsection">
-          <div class="banner-card">
-            <img class="banner-image" src="../../img/home-banner-one.png" />
-            <a href="#"></a>
-          </div>
-        </div>
-        <div class="banner-subsection">
-          <div class="banner-card">
-            <img class="banner-image" src="../../img/home-banner-two.png" />
-            <a href="#"></a>
-          </div>
-        </div>
-      </div>
-    </section>
+        <img id="image-background-top" src="../../img/home-background-top.png">
+        <div id="banner-section">
+            <div class="banner-subsection">
+                <div class="banner-card">
+                    <img class="banner-image" src="../../img/home-banner-one.png">
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="banner-subsection">
+                <div class="banner-card">
+                    <img class="banner-image" src="../../img/home-banner-two.png">
+                    <a href="#"></a>
 
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <section id="announce-section">
-      <img
-        id="image-background-bottom"
-        src="../../img/home-background-bottom.png"
-      />
-      <div id="announce-container">
-        <div class="announce-subcontainer">
-          <div id="announce-mensage">
-            <h1>
-              Encontre<br />alguém para o seu<br />quarto desocupado<br /><b
-                >Sem complicações.</b
-              >
-            </h1>
-            <button id="announce-button">Anunciar quarto</button>
-          </div>
+        <img id="image-background-bottom" src="../../img/home-background-bottom.png">
+        <div id="announce-container">
+            <div class="announce-subcontainer">
+                <div id="announce-mensage">
+                    <h1>Encontre<br>alguém para o seu<br>quarto desocupado<br><b>Sem complicações.</b></h1>
+                    <button id="announce-button">Anunciar quarto</button>
+                </div>
+            </div>
+            
+            <div id="image-announce-container">
+                <img id="image-announce" src="../../img/home-image-announce.png">
+            </div>
         </div>
-
-        <div id="image-announce-container">
-          <img id="image-announce" src="../../img/home-image-announce.png" />
-        </div>
-      </div>
     </section>
-  </body>
-  <script src="./script.js" />
+</body>
 </html>
