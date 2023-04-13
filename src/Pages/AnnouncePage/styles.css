@@ -1,5 +1,6 @@
 :root {
     --primary-color: #FF6700;
+    --primary-color-dark: #BF4D00;
     --text-base: #4C4652;
     --text-low: #B4B4B4;
     --primary-background: #FFFCF9;
@@ -50,6 +51,11 @@ button, #login-button {
     border-radius: 12px;
     font-size: 16px;
     padding: 8px 24px;
+}
+
+#login-button:hover {
+    background-color: var(--primary-color-dark);
+    cursor: pointer;
 }
 
 /*///////////////////*/
@@ -291,32 +297,37 @@ select:focus ~ label {
     align-items: center;
   
     position: relative;
-  }
-  
-  #img-input-label {
+}
+ 
+#img-input-label {
     font-size: 20px;
     position: absolute;
     top: -16px;
     background-color: var(--primary-background);
     border-left: solid 4px var(--primary-background);
     border-right: solid 4px var(--primary-background);
-  }
+}
   
-  #add-img-icon {
+#add-img-icon {
     width: 64px;
     height: 64px;
     padding: 4px;
     margin-top: 12px;
-  }
+}
   
-  #img-input {
+#img-input {
     width: 90%;
     height: 24px;
     background-color: transparent;
     color: var(--text-base);
-  }
+}
   
-  #announce-button {
+#img-input:hover {
+    background-color: var(--low-background);
+    cursor: pointer;
+}
+ 
+#announce-button {
     border: none;
     background-color: var(--primary-color);
     color: var(--primary-background);
@@ -325,4 +336,9 @@ select:focus ~ label {
     padding: 8px 24px;
     transition: .5s;
     text-align: center;
+}
+
+#announce-button:hover {
+    background-color: var(--primary-color-dark);
+    cursor: pointer;
 }
