@@ -44,13 +44,34 @@
     <section id="body-section">
         <section id="form-card">
             <section class="form-container">
+                <label for="img-input">Fotos</label>
+                <div id="img-input-container" class="input-group">
+                    <img id="add-img-icon" src="../../img/add-img-icon.svg" alt="Adicionar Imagem">
+                    <input id="img-input" type="file" accept="image/*" multiple>
+                    <form action="post" enctype="multipart/form-data">
+                    </form>
+                </div>
+                <div class="input-group">
+                    <span id="title-error-msg"></span>
+                    <input id="title-input" type="text" name="title-input">
+                    <label class="label-input" for="title-input">Título</label>
+                </div>
+                <div class="input-group">
+                    <span id="period-error-msg"></span>
+                    <input id="period-input" type="text" name="period-input">
+                    <label class="label-input" for="period-input">Período</label>
+                </div>
+                <div id="description-group" class="input-group">
+                    <span id="description-error-msg"></span>
+                    <textarea name="description-input" id="description-input" cols="16" rows="10"></textarea>
+                    <label class="label-input" for="description-input">Descrição</label>
+                </div>
+                <!-- Periodo -->
             </section>
+
             <div class="line-separator-y"></div>
             
             <div>
-                <section id="" class="form-container">
-    
-                </section>
                 <section class="form-container">
                     <form>
                         <fieldset>
@@ -58,62 +79,66 @@
     
                             <div class="in-line-sbt">
                                 <div id="street-group" class="input-group">
-                                    <label class="label-input" for="street-input">Rua</label>
-                                    <input id="street-input" type="text" name="street-input">
                                     <span id="street-error-msg"></span>
+                                    <input id="street-input" type="text" name="street-input">
+                                    <label class="label-input" for="street-input">Rua</label>
                                 </div>
         
                                 <div id="house-number-group" class="input-group">
-                                    <label class="label-input" for="house-number-input">Nº</label>
-                                    <input id="house-number-input" type="text" name="house-number-input">
                                     <span id="house-number-error-msg"></span>
+                                    <input id="house-number-input" type="text" name="house-number-input">
+                                    <label class="label-input" for="house-number-input">Nº</label>
                                 </div>
                             </div>
                             <div class="in-line-sbt">
                                 <div id="apartment-complex-group" class="input-group">
-                                    <label class="label-input" for="apartment-complex-input">Condomínio</label>
-                                    <input id="apartment-complex-input" type="text" name="apartment-complex-input">
                                     <span id="apartment-complex-error-msg"></span>
+                                    <input id="apartment-complex-input" type="text" name="apartment-complex-input">
+                                    <label class="label-input" for="apartment-complex-input">Condomínio</label>
                                 </div>
         
                                 <div id="apartment-number-group" class="input-group">
-                                    <label class="label-input" for="apartment-number-input">Apto</label>
-                                    <input id="apartment-number-input" type="text" name="apartment-number-input">
                                     <span id="apartment-number-error-msg"></span>
+                                    <input id="apartment-number-input" type="text" name="apartment-number-input">
+                                    <label class="label-input" for="apartment-number-input">Apto</label>
                                 </div>
                                 
                                 <div id="block-group" class="input-group">
-                                    <label class="label-input" for="block-input">Quadra</label>
-                                    <input id="block-input" type="text" name="block-input">
                                     <span id="block-error-msg"></span>
+                                    <input id="block-input" type="text" name="block-input">
+                                    <label class="label-input" for="block-input">Quadra</label>
                                 </div>
                             </div>
                             <div class="in-line-sbt">
                                 <div id="district-group" class="input-group">
-                                    <label class="label-input" for="district-input">Bairro</label>
-                                    <input id="district-input" type="text" name="district-input">
                                     <span id="district-error-msg"></span>
+                                    <input id="district-input" type="text" name="district-input">
+                                    <label class="label-input" for="district-input">Bairro</label>
                                 </div>
         
                                 <div id="zip-code-group" class="input-group">
-                                    <label class="label-input" for="zip-code-input">CEP</label>
-                                    <input id="zip-code-input" type="text" name="zip-code-input">
                                     <span id="zip-code-error-msg"></span>
+                                    <input id="zip-code-input" type="text" name="zip-code-input">
+                                    <label class="label-input" for="zip-code-input">CEP</label>
                                 </div>
                                 <div id="city-group" class="input-group">
-                                    <label class="label-input" for="city-input">Cidade</label>
-                                    <input id="city-input" type="text" name="city-input">
                                     <span id="city-error-msg"></span>
+                                    <input id="city-input" type="text" name="city-input">
+                                    <label class="label-input" for="city-input">Cidade</label>
                                 </div>
         
                                 <div id="state-group" class="input-group">
-                                    <label class="label-input" for="state-input">Estado</label>
-                                    <input id="state-input" type="text" name="state-input">
                                     <span id="state-error-msg"></span>
+                                    <input id="state-input" type="text" name="state-input">
+                                    <label class="label-input" for="state-input">Estado</label>
                                 </div>
                             </div>
                         </fieldset>
                     </form>
+                </section>
+                <div class="line-separator-x"></div>
+                <section id="" class="form-container">
+    
                 </section>
             </div>
         </section>
