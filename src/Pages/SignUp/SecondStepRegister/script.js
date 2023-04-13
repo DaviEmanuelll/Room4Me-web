@@ -1,12 +1,17 @@
 function handleRegister() {
-  let image = document.getElementById("profile-img-input");
-  let name = document.getElementById("name-input").value;
-  let imgErrorMsg = document.getElementById("img-error-msg");
-  let nameErrorMsg = document.getElementById("name-error-msg");
+  const name = document.getElementById("name-input").value;
+  const nameInput = document.getElementById("name-input");
+  const nameInputLabel = document.getElementById("name-input-label");
+  const nameErrorMsg = document.getElementById("name-error-msg");
 
-  nameErrorMsg.innerHTML = '';
-  
-  if(name == '' || name == undefined){
-    nameErrorMsg.innerHTML = "Preencha o campo de nome"
+  nameErrorMsg.innerHTML = "";
+
+  if (name == "" || name == undefined) {
+    nameInput.style.borderColor = "red";
+    nameInputLabel.style.color = "red";
+    nameErrorMsg.innerHTML = "Preencha o campo de nome";
+  } else {
+    nameInput.style.borderColor = "";
+    nameInputLabel.style.color = "";
   }
 }
