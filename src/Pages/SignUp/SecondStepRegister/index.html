@@ -1,72 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 
-    <link rel="icon" href="../../../img/favicon.ico" type="image/x-icon">
-    <title>Room4Me</title>    
+    <link rel="icon" href="../../../img/favicon.ico" type="image/x-icon" />
+    <title>Room4Me</title>
 
-    <meta name="author" content="Davi Emanuel">
-</head>
-<body>
-    <img id="image-background" src="../../../img/signup-background.jpg" alt="imagem de fundo">
+    <meta name="author" content="Davi Emanuel" />
+  </head>
+  <body>
+    <img
+      id="image-background"
+      src="../../../img/signup-background.jpg"
+      alt="imagem de fundo"
+    />
 
     <section id="body-section">
-        <main id="signup-background">
-          <div id="signup-container">
-            <div id="header-container">
-              <a href="../../../Pages/HomePage/index.html">
-                <img id="logo" src="../../../img/logo-name.svg" alt="Logo Room4Me">
+      <main id="signup-background">
+        <div id="signup-container">
+          <div id="header-container">
+            <a href="../../../Pages/HomePage/index.html">
+              <img
+                id="logo"
+                src="../../../img/logo-name.svg"
+                alt="Logo Room4Me"
+              />
+            </a>
+            <div class="in-line">
+              <h1>Crie sua conta</h1>
+              <a href="../SecondStepRegister/index.html">
+                <img
+                  id="signup-state"
+                  src="../../../img/signup-state-two.svg"
+                  alt="Etapa dois"
+                />
               </a>
-              <div class="in-line">
-                <h1>Crie sua conta</h1>
-                <a href="../SecondStepRegister/index.html">
-                  <img id="signup-state" src="../../../img/signup-state-two.svg" alt="Etapa dois">
-                </a>
-              </div>
-            </div>
-            <div class="input-group">
-            <div class="img-input-container">
-              <label id="img-input-label" for="img-input">Foto de perfil</label>
-              <img id="add-img-icon" src="../../../img/add-img-icon.svg" alt="Adicionar Imagem">
-              <form action="post" enctype="multipart/form-data">
-                <input id="img-input" type="file" accept="image/*">
-              </form>
-            </div>
-            </div>
-            <div class="input-group">
-              <input class="field-input" type="text" name="name-input" id="name-input" aria-label="Insira seu nome"/>
-              <label class="label-input" for="name-input">Nome</label>
-              <span id="name-error-msg"></span>
-            </div>
-            <div class="input-group">
-              <label class="label-input" for="gender-select">Ordernar por</label>
-              <select name="gender-select" id="gender-select">
-                <option value="masculine">Masculino</option>
-                <option value="feminine">Feminino</option>
-                <option value="other">Outro</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <div id="buttons-container">
-                <a id="back-button" href="../FirstStepRegister/index.html">Voltar</a>
-                <button id="submit-button" onclick="handleRegister()">
-                  Confirmar
-                </button>
-              </div>  
-
             </div>
           </div>
-        </main>
+          <div class="input-group">
+            <div class="img-input-container">
+              <label id="img-input-label" for="img-input">Foto de perfil</label>
+              <img
+                id="add-img-icon"
+                src="../../../img/add-img-icon.svg"
+                alt="Adicionar Imagem"
+              />
+              <form action="post" enctype="multipart/form-data">
+                <input id="img-input" type="file" accept="image/*" />
+              </form>
+            </div>
+          </div>
+          <div class="input-group">
+            <input
+              class="field-input"
+              type="text"
+              name="name-input"
+              id="name-input"
+              aria-label="Insira seu nome"
+            />
+            <label class="label-input" for="name-input">Nome</label>
+            <span id="name-error-msg"></span>
+          </div>
+          <div class="input-group">
+            <label class="label-input" for="gender-select">Ordernar por</label>
+            <select name="gender-select" id="gender-select">
+              <option value="masculine">Masculino</option>
+              <option value="feminine">Feminino</option>
+              <option value="other">Outro</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <div id="buttons-container">
+              <a id="back-button" href="../FirstStepRegister/index.html"
+                >Voltar</a
+              >
+              <button id="submit-button" onclick="handleRegister()">
+                Confirmar
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
     </section>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

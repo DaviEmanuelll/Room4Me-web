@@ -1,21 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-body{
-  background-image: url('../../img/registerPageBackground.png');
+body {
+  background-image: url("../../img/registerPageBackground.png");
   background-size: cover;
   background-repeat: no-repeat;
-  color: #4C4652;
-  font-family: 'Open Sans', sans-serif;
+  color: #4c4652;
+  font-family: "Open Sans", sans-serif;
   height: 100%;
 }
 
-main{
+main {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
 
-section{
+section {
   width: 50%;
   height: 100%;
 }
@@ -25,13 +25,13 @@ section{
     flex-direction: column;
   }
 
-  #main-container{
+  #main-container {
     height: 100%;
     width: 100%;
     margin: 0;
   }
 
-  #space-container{
+  #space-container {
     height: 0;
     width: 0;
   }
@@ -58,8 +58,7 @@ section{
   cursor: pointer;
 }
 
-
-#register-container{
+#register-container {
   background-color: #ffffff;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
@@ -72,52 +71,49 @@ section{
   justify-content: center;
   gap: 5px;
   margin: 30px auto;
-  
 }
 
-#register-container #logo{
+#register-container #logo {
   width: 250px;
 }
 
-#register-container label{
+#register-container label {
   text-align: left;
   width: 100%;
 }
 
-#register-container span{
+#register-container span {
   color: red;
   min-height: 15px;
   margin-bottom: 15px;
 }
 
-
-#register-container input{
+#register-container input {
   min-height: 50px;
   border-radius: 15px;
-  border: 1px solid #4C4652;
+  border: 1px solid #4c4652;
   width: 100%;
   margin: 10px;
   font-size: 20px;
-  padding: 0 10px
+  padding: 0 10px;
 }
 
-#register-container select{
+#register-container select {
   min-height: 50px;
   border-radius: 15px;
-  border: 1px solid #4C4652;
+  border: 1px solid #4c4652;
   width: 104%;
   margin: 10px;
   font-size: 20px;
-  padding: 0 10px
+  padding: 0 10px;
 }
-#register-container a{
+#register-container a {
   text-decoration: none;
   font-size: 16px;
-  color: #FF6700;
+  color: #ff6700;
 }
 
-
-#register-container #buttons-div{
+#register-container #buttons-div {
   margin-top: 30px;
   width: 100%;
   display: flex;
@@ -126,9 +122,9 @@ section{
   gap: 3;
 }
 
-#register-container #buttons-div #back-button{
-  border: 1px solid #FF6700;
-  color: #FF6700;
+#register-container #buttons-div #back-button {
+  border: 1px solid #ff6700;
+  color: #ff6700;
   background-color: transparent;
   width: 50%;
   min-height: 50px;
@@ -138,10 +134,10 @@ section{
   cursor: pointer;
 }
 
-#register-container #buttons-div #submit-button{
+#register-container #buttons-div #submit-button {
   border: none;
   color: #ffffff;
-  background-color: #FF6700;
+  background-color: #ff6700;
   width: 50%;
   min-height: 50px;
   border-radius: 15px;
@@ -149,5 +145,3 @@ section{
   margin: 0px 10px;
   cursor: pointer;
 }
-
-

@@ -1,13 +1,13 @@
 :root {
-  --primary-color: #FF6700;
-  --primary-color-dark: #BF4D00;
-  --text-base: #4C4652;
-  --text-low: #B4B4B4;
-  --primary-background: #FFFCF9;
-  --secondary-background: #FFDAC2;
-  --low-background: #F4F4F4;
+  --primary-color: #ff6700;
+  --primary-color-dark: #bf4d00;
+  --text-base: #4c4652;
+  --text-low: #b4b4b4;
+  --primary-background: #fffcf9;
+  --secondary-background: #ffdac2;
+  --low-background: #f4f4f4;
 
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 * {
@@ -25,7 +25,6 @@ body {
   z-index: 0;
 
   border-radius: 16px;
-
 }
 
 ::-webkit-scrollbar {
@@ -46,7 +45,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: .9;
+  opacity: 0.9;
   z-index: 0;
 }
 
@@ -182,7 +181,7 @@ input:focus ~ label {
 }
 
 label {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-weight: 400;
   color: var(--text-base);
   pointer-events: none;
@@ -241,7 +240,7 @@ select:focus ~ label {
   display: flex;
   justify-content: space-between;
   align-items: center;
-} 
+}
 
 #back-button {
   border: none;
@@ -251,7 +250,7 @@ select:focus ~ label {
   font-size: 16px;
   padding: 8px 24px;
   border: solid 1.5px var(--primary-color);
-  text-decoration: none; 
+  text-decoration: none;
 
   max-height: 40px;
   outline: none;
