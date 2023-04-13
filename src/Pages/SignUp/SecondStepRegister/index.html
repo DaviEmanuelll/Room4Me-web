@@ -29,27 +29,40 @@
               <div class="in-line">
                 <h1>Crie sua conta</h1>
                 <a href="../SecondStepRegister/index.html">
-                  <img id="signup-state" src="../../../img/signup-state-two.svg" alt="Um">
+                  <img id="signup-state" src="../../../img/signup-state-two.svg" alt="Etapa dois">
                 </a>
               </div>
             </div>
             <div class="input-group">
-                <input class="field-input" type="text" name="email-input" id="email-input" aria-label="Insira seu endereço de email">
-                <label class="label-input" for="email-input">Email</label>
-                <span id="email-error-msg"></span>
+            <div class="img-input-container">
+              <label id="img-input-label" for="img-input">Foto de perfil</label>
+              <img id="add-img-icon" src="../../../img/add-img-icon.svg" alt="Adicionar Imagem">
+              <form action="post" enctype="multipart/form-data">
+                <input id="img-input" type="file" accept="image/*">
+              </form>
+            </div>
             </div>
             <div class="input-group">
-              <input class="field-input" type="password" name="password-input" id="password-input" aria-label="Insira sua senha">
-              <label class="label-input" for="password-input">Senha</label>
-              <span id="password-error-msg"></span>
+              <input class="field-input" type="text" name="name-input" id="name-input" aria-label="Insira seu nome"/>
+              <label class="label-input" for="name-input">Nome</label>
+              <span id="name-error-msg"></span>
             </div>
             <div class="input-group">
-              <input class="field-input" type="password-confirmation" name="password-confirmation-input" id="password-confirmation-input" aria-label="Insira sua senha">
-              <label class="label-input" for="password-confirmation-input">Confirmar senha</label>
-              <span id="password-confirmation-error-msg"></span>
+              <label class="label-input" for="gender-select">Ordernar por</label>
+              <select name="gender-select" id="gender-select">
+                <option value="masculine">Masculino</option>
+                <option value="feminine">Feminino</option>
+                <option value="other">Outro</option>
+              </select>
             </div>
-            <div id="footer-container">
-              <button id="submit-button" onclick="handleRegister()">Confirmar</button>
+            <div class="input-group">
+              <div id="buttons-container">
+                <a id="back-button" href="../FirstStepRegister/index.html">Voltar</a>
+                <button id="submit-button" onclick="handleRegister()">
+                  Confirmar
+                </button>
+              </div>  
+
             </div>
           </div>
         </main>

@@ -80,7 +80,7 @@ body {
   width: 400px;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
   min-height: 480px;
   margin-inline: auto;
 }
